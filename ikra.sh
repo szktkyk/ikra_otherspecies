@@ -275,6 +275,17 @@ elif [[ $REF_SPECIES = human ]]; then
   SALMON_INDEX=salmon_index_human
 #   REF_GTF=gencode.v${H_GEN_VER}.annotation.gtf.gz
   TX2SYMBOL=gencode.v${H_GEN_VER}.metadata.HGNC.gz
+
+elif [[ $REF_SPECIES = zebrafish ]]; then
+  REF_TRANSCRIPT=Danio_rerio.GRCz11.cdna.all.fa.gz
+  SALMON_INDEX=salmon_index_zebrafish
+  TX2SYMBOL=zebrafish_metadata.txt.gz
+
+elif [[ $REF_SPECIES = bombyx ]]; then
+  REF_TRANSCRIPT=Bombyx_mori.Bmori_2016v1.0.cdna.all.fa.gz
+  SALMON_INDEX=salmon_index_bombyx
+  TX2SYMBOL=bombyx_metadata.txt.gz
+
 else
   echo No reference speice!
   exit

@@ -3,14 +3,22 @@ test/Ion/*
 test/Illumina_SE/*
 !test/Illumina_SE/Illumina_SE_SRR.csv
 !test/Illumina_SE/Illumina_SE_fastq.csv
+!test/Illumina_SE/bombyx_metadata.txt.gz
+!test/Illumina_SE/Bombyx_mori.Bmori_2016v1.0.cdna.all.fa.gz
+!test/Illumina_SE/Danio_rerio.GRCz11.cdna.all.fa.gz
+!test/Illumina_SE/zebrafish_metadata.txt.gz
 test/Illumina_PE/*
 !test/Illumina_PE/Illumina_PE_SRR.csv
 !test/Illumina_PE/Illumina_PE_fastq.csv
+!test/Illumina_PE/bombyx_metadata.txt.gz
+!test/Illumina_PE/Bombyx_mori.Bmori_2016v1.0.cdna.all.fa.gz
+!test/Illumina_PE/Danio_rerio.GRCz11.cdna.all.fa.gz
+!test/Illumina_PE/zebrafish_metadata.txt.gz
 test/Illumina
 test/cwl_PE/salmon_index_mouse
 test/cwl_PE/quant.sf
 test/cwl_PE/docker*
-*.gz
+# *.gz
 *.ipynb_checkpoints*
 *.Rhistory
 *log*
